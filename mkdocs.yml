@@ -1,0 +1,13 @@
+site_name: CS50P - SCBZ's Course Notes
+site_url: https://scbzfarmingtest.github.io/CS50P/
+nav:
+  - CS50P: index.md
+  - Lectures: 
+    - Lecture 0&1&2: lectures/012.md
+
+theme: 
+  name: mkdocs
+  highlightjs: true
+
+markdown_extensions:
+  - pymdownx.superfences
