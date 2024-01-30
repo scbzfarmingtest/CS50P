@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://scbzfarmingtest.github.io/CS50P/lectures/012/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Lecture 0&1&2 - CS50P - SCBZ's Course Notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">CS50P - SCBZ's Course Notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">CS50P</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lectures <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Lecture 0&1&2</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#lecture-0-cs50p" class="nav-link">Lecture 0 - CS50P</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#concepts" class="nav-link">Concepts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#str" class="nav-link">str</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#int" class="nav-link">int</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#float" class="nav-link">float</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#def-define-functions" class="nav-link">def - define Functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="lecture-0-cs50p">Lecture 0 - CS50P</h1>
+<h2 id="concepts">Concepts</h2>
+<ol>
+<li>Functions</li>
+<li>Bugs</li>
+<li>Variables</li>
+<li>Comments</li>
+<li>Pseudocode (伪代码，<code>'sju:dəʊˌkəʊd</code>, where p is <strong>not</strong> pronounced)</li>
+<li>Parameters and arguments.  <ul>
+<li><em>Param</em>s are variables can be passed;</li>
+<li><em>Arg</em>s are params that are passed to a <em>function</em>s;</li>
+<li>Mostly they are the same concept.</li>
+</ul>
+</li>
+</ol>
+<h2 id="str"><code>str</code></h2>
+<ol>
+<li><code>+</code> can <em>join</em> strings;</li>
+<li><code>print</code> = <code>print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)</code>:<ol>
+<li><code>print</code> can have many args (e.g. <em>string</em>s) passed;</li>
+<li><code>sep</code> means the <em>seperator</em> of passed <em>string</em>s are <code></code>;</li>
+<li>The end of the line will add a default character <code>\n</code>;`</li>
+<li>It will be written to a special file, <em>Standard Output</em>;</li>
+<li>The <em>buffer</em> will not be flushed, similar to <code>fprintf</code> in <code>C</code> without <code>fflush(stdout);</code></li>
+<li><code>'</code> and <code>"</code> are both acceptable</li>
+</ol>
+</li>
+<li><code>f"{}"</code> format</li>
+<li>Method <code>strip()</code>: <code>str_var = str_var.strip()</code> will remove "<em>redundant</em>" <code></code>s (only <em>space</em>s beginning and ending with, no deletion in the middle).</li>
+<li>Method <code>title()</code>: <code>str_var = str_var.title()</code></li>
+<li>Methods can be used together. Just append more.</li>
+</ol>
+<h2 id="int"><code>int</code></h2>
+<ol>
+<li><code>1+2 = 3</code>, while <code>"1"+"2" = "12"</code></li>
+<li><code>int(str)</code> can transfer a <em>text integer</em> <code>str</code> to a real <code>int</code></li>
+</ol>
+<h2 id="float"><code>float</code></h2>
+<ol>
+<li>A <code>float</code> is a <code>float</code>.<br />
+    <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>  <span class="c1"># input 999</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>  <span class="c1"># input 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">z</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">)</span>
+</code></pre></div>
+    will return <code>1,000</code> and it is still indeed a fload. No need of <code>999.0</code> and <code>1.0</code></li>
+</ol>
+<h2 id="def-define-functions"><code>def</code> - define Functions</h2>
+<ol>
+<li>No need to define the return value of function, and also for params. Just <code>def hello(name)</code> rather than <code>int hello (char *name)</code>.</li>
+<li>Like <code>C++</code>, each param can have default value. e.g. <code>def hello(to="world")</code></li>
+<li><strong><em>Scope</em></strong> is the extension that params function, that is one need to distinguish the difference between real parameters, form parameters, and values and know their scope of action.</li>
+<li></li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
